@@ -1,0 +1,29 @@
+{
+  "name": "sw-workbox",
+  "version": "1.0.0",
+  "description": "workbox is javascript libraries for Progressive Web Apps.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress --color",
+    "build:watch": "npm run build -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konojunya/sw-workbox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/konojunya/sw-workbox/issues"
+  },
+  "homepage": "https://github.com/konojunya/sw-workbox#readme",
+  "devDependencies": {
+    "ts-loader": "^2.3.2",
+    "webpack": "^3.5.0",
+    "workbox-sw": "^1.1.0"
+  },
+  "dependencies": {
+    "typescript": "^2.4.2"
+  }
+}
