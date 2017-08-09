@@ -1,5 +1,5 @@
 const path = require('path');
-const DIST_DIR = 'public';
+const DIST_DIR = 'assets';
 
 module.exports = {
   entry: path.resolve(__dirname, './src/sw.ts'),

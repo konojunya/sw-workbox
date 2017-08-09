@@ -1,0 +1,13 @@
+{
+  "name": "sw-workbox",
+  "short_name": "workbox Test",
+  "icons": [
+    {
+      "src": "public/image/hasikan.jpg",
+      "sizes": "144x144",
+      "type": "image/jpeg"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone"
+}

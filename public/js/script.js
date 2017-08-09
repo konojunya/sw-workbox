@@ -6,5 +6,3 @@ navigator.serviceWorker.register('/sw.js', { scope: '/' }).then(
     console.error(err)
   }
 );
-
-console.log("hogehoge!!!!!")
