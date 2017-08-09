@@ -1,0 +1,16 @@
+{
+  "apps": [{
+    "name": "sw-workbox",
+    "script": "server.js",
+    "exec_mode": "cluster_mode",
+    "restart_delay": 500,
+    "log_date_format": "YYYY-MM-DD HH:mm Z",
+    "watch": [
+      "./"
+    ],
+    "watch_options": {
+      "followSymlinks": false
+    },
+    "interpreter_args": "--harmony"
+  }]
+}

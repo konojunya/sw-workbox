@@ -1,5 +1,5 @@
 const path = require('path');
-const DIST_DIR = 'dist';
+const DIST_DIR = 'public';
 
 module.exports = {
   entry: path.resolve(__dirname, './src/sw.ts'),

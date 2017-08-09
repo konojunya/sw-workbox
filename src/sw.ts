@@ -7,8 +7,8 @@ const workboxSW = new WorkboxSW({
 
 const CACHE_VERSION = 1;
 const CACHE_NAMES = {
-  offline: 'offline-cache-v' + CACHE_VERSION,
-  channel: 'cache-channel-v' + CACHE_VERSION
+  offline: 'test-offline-cache-v' + CACHE_VERSION,
+  channel: 'test-cache-channel-v' + CACHE_VERSION
 };
 
 /**
@@ -35,4 +35,4 @@ const cacheFirstStrategy = workboxSW.strategies.cacheFirst({
  *
  * @see https://github.com/GoogleChrome/workbox/blob/master/packages/workbox-sw/src/lib/router.js
  */
-workboxSW.router.registerRoute(/\.{js|css}$/, cacheFirstStrategy);
+workboxSW.router.registerRoute('/public', cacheFirstStrategy);
