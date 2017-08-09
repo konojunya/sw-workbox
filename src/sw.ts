@@ -36,3 +36,18 @@ const cacheFirstStrategy = workboxSW.strategies.cacheFirst({
  * @see https://github.com/GoogleChrome/workbox/blob/master/packages/workbox-sw/src/lib/router.js
  */
 workboxSW.router.registerRoute('/public/*', cacheFirstStrategy);
+
+/**
+ * fetch event
+ *
+ * @return If it caches it will return the cache, but fetch if not cached
+ */
+self.addEventListener('fetch', (event: any) => {
+  event.respondWith(
+    caches.open(CACHE_NAMES.offline).then((cache) => {
+      return cache.match(event.request).then((cached) => {
+        return cached || fetch(event.request);
+      });
+    })
+  );
+});
