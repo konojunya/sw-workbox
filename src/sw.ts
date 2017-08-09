@@ -36,13 +36,3 @@ const cacheFirstStrategy = workboxSW.strategies.cacheFirst({
  * @see https://github.com/GoogleChrome/workbox/blob/master/packages/workbox-sw/src/lib/router.js
  */
 workboxSW.router.registerRoute('/public/*', cacheFirstStrategy);
-// workboxSW.router.registerRoute('/public/*', (args) => {
-//   const event = args.event;
-//   event.respondWith(
-//     caches.open(CACHE_NAMES.offline).then((cache) => {
-//       return cache.match(event.request).then((cached) => {
-//         return cached || fetch(event.request);
-//       });
-//     })
-//   );
-// });
